@@ -4,48 +4,50 @@
     // ---------------------------------------------------------------------
     { "keys": ["alt+left"], "command": "jump_back" }
     ,{ "keys": ["alt+right"], "command": "jump_forward" }
-    ,{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} }
-    ,{ "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
+    ,{ "keys": ["super+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} }
+    ,{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} }
     ,{ "keys": ["shift+alt+r"], "command": "find_all_under" }
-    ,{ "keys": ["ctrl+k"], "command": "find_under" }
-    ,{ "keys": ["ctrl+shift+k"], "command": "find_under_prev" }
+    ,{ "keys": ["super+k"], "command": "find_under" }
+    ,{ "keys": ["super+shift+k"], "command": "find_under_prev" }
     ,{ "keys": ["alt+up"], "command": "swap_line_up" }
     ,{ "keys": ["alt+down"], "command": "swap_line_down" }
-    ,{ "keys": ["ctrl+alt+j"], "command": "join_lines" }
-    ,{ "keys": ["ctrl+alt+down"], "command": "duplicate_line" }
-    ,{ "keys": ["ctrl+alt+up"], "command": "duplicate_line" }
-    ,{ "keys": ["shift+ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
-    ,{ "keys": ["shift+ctrl+y"], "command": "lower_case" }
-    ,{ "keys": ["shift+ctrl+x"], "command": "upper_case" }
-    ,{ "keys": ["ctrl+shift+f"], "command": "reindent" , "args": {"single_line": false}}
-    ,{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } }
-    ,{ "keys": ["ctrl+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} }
-    ,{ "keys": ["ctrl+shift+s"], "command": "save_all" }
-    ,{ "keys": ["shift+ctrl+f4"], "command": "close_all" }
-    ,{ "keys": ["shift+ctrl+w"], "command": "close_all" }
+    ,{ "keys": ["super+alt+j"], "command": "join_lines" }
+    ,{ "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} }
+    ,{ "keys": ["super+alt+down"], "command": "duplicate_line" }
+    ,{ "keys": ["super+alt+up"], "command": "duplicate_line" }
+    ,{ "keys": ["shift+super+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
+    ,{ "keys": ["shift+super+y"], "command": "lower_case" }
+    ,{ "keys": ["shift+super+x"], "command": "upper_case" }
+    // ,{ "keys": ["super+shift+f"], "command": "reindent" , "args": {"single_line": false}}
+    ,{ "keys": ["super+shift+c"], "command": "toggle_comment", "args": { "block": false } }
+    ,{ "keys": ["super+o"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} }
+    ,{ "keys": ["super+shift+s"], "command": "save_all" }
+    ,{ "keys": ["shift+super+f4"], "command": "close_all" }
+    ,{ "keys": ["shift+super+w"], "command": "close_all" }
     ,{ "keys": ["f3"], "command": "goto_definition" }
     ,{"keys": ["f5"], "command": "revert"}
-    ,{ "keys": ["ctrl+f11"], "command": "build" }
+    ,{ "keys": ["super+f11"], "command": "build" }
 
     // ---------------------Sublime Text3 Original Shortcut Key ---------------------------
     ,{ "keys": ["shift+alt+d"], "command": "find_under_expand" }
-    ,{ "keys": ["ctrl+shift+o"], "command": "prompt_open_file" }
-    ,{ "keys": ["ctrl+up"], "command": "select_lines", "args": {"forward": false} }
-    ,{ "keys": ["ctrl+down"], "command": "select_lines", "args": {"forward": true} }
+    ,{ "keys": ["super+shift+o"], "command": "prompt_open_file" }
+    ,{ "keys": ["super+up"], "command": "select_lines", "args": {"forward": false} }
+    ,{ "keys": ["super+down"], "command": "select_lines", "args": {"forward": true} }
 
     //  ----------------------------follow package ------------------------------------------
-    // [ctrl+q] https://github.com/khrizt/GotoLastEdit
+    // [super+q] https://github.com/khrizt/GotoLastEdit
 
     // ------------------------ orifinal Key Binding-----------------------------------------
-    ,{ "keys": ["ctrl+tab"], "command": "next_view" }
-    ,{ "keys": ["ctrl+shift+tab"], "command": "prev_view" }
-    ,{ "keys": ["ctrl+e"], "command": "open_dir"
+    ,{ "keys": ["super+tab"], "command": "next_view" }
+    ,{ "keys": ["super+shift+tab"], "command": "prev_view" }
+    ,{ "keys": ["super+e"], "command": "open_dir"
         , "args": {
             "dir": "$file_path", "file": "$file_name"
         }
-    }
+    },
+    { "keys": ["ctrl+h"], "command": "show_panel", "args": {"panel": "find_in_files"} }
     // open this file
-    ,{ "keys": ["ctrl+shift+l"], "command": "open_file"
+    ,{ "keys": ["super+shift+l"], "command": "open_file"
         ,"args":
         {
             "file": "${packages}/User/Default ($platform).sublime-keymap",
